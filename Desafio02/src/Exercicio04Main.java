@@ -10,7 +10,7 @@ public class Exercicio04Main {
         int invertido = 0;
         int resto = 0;
 
-        if (num <= 9999 && num>= -9999) {
+        if (num> 0 && num <= 9999) {
             while (num > 0) {
                 resto = num % 10;
                 invertido = (invertido * 10) + resto;
@@ -20,7 +20,7 @@ public class Exercicio04Main {
             System.out.println("Número invertido: " + invertido);
             /// ex 1234 = 4321
         } else {
-            System.out.println("ERRO! O número deve ter até 4 DIGITOS.");
+            System.out.println("ERRO! O número deve ter até 4 DIGITOS e ser positivo.");
         }
     }
 }
