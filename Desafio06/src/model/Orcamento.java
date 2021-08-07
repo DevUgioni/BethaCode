@@ -5,14 +5,14 @@ import java.util.List;
 
 public class Orcamento {
     private Long id;
-    private LocalDate dataPedido;
+    private LocalDate dataOrcamento;
     private Cliente cliente;
     private Vendedor vendedor;
     private List<OrcamentoItens> itens;
 
-    public Orcamento(Long id, LocalDate dataPedido, Cliente cliente, Vendedor vendedor, List<OrcamentoItens> itens) {
+    public Orcamento(Long id, LocalDate dataOrcamento, Cliente cliente, Vendedor vendedor, List<OrcamentoItens> itens) {
         this.id = id;
-        this.dataPedido = dataPedido;
+        this.dataOrcamento = dataOrcamento;
         this.cliente = cliente;
         this.vendedor = vendedor;
         this.itens = itens;
@@ -26,12 +26,12 @@ public class Orcamento {
         this.id = id;
     }
 
-    public LocalDate getDataPedido() {
-        return dataPedido;
+    public LocalDate getDataOrcamento() {
+        return dataOrcamento;
     }
 
-    public void setDataPedido(LocalDate dataPedido) {
-        this.dataPedido = dataPedido;
+    public void setDataOrcamento(LocalDate dataOrcamento) {
+        this.dataOrcamento = dataOrcamento;
     }
 
     public Cliente getCliente() {

@@ -13,7 +13,7 @@ public class VendaBalcao implements Faturavel{
 
     @Override
     public LocalDate getDataFatura() {
-        return null;
+        return this.dataPedido;
     }
 
     @Override
@@ -28,11 +28,11 @@ public class VendaBalcao implements Faturavel{
 
     @Override
     public Cliente getCliente() {
-        return null;
+        return this.cliente;
     }
 
     @Override
     public Vendedor getVendedor() {
-        return null;
+        return this.vendedor;
     }
 }
