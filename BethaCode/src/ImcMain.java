@@ -9,7 +9,7 @@ public class ImcMain {
         pessoa1.filiacao = "Mãe Teste";
 
         pessoa1.getIMC();
-        System.out.println(pessoa1.nome+ ", peso: " +pessoa1.peso+ " e altura " +pessoa1.altura+ " seu IMC é: "+pessoa1.IMC);
+        //System.out.println(pessoa1.nome+ ", peso: " +pessoa1.peso+ " e altura " +pessoa1.altura+ " seu IMC é: "+pessoa1.IMC);
     }
 
     static class Pessoa {
@@ -22,8 +22,15 @@ public class ImcMain {
         String filiacao;
         Double IMC;
 
-        void getIMC(){
+        public void getIMC(){
             IMC = peso / Math.pow(altura,2);
+            System.out.println("IMC: "+IMC);
         }
+
+        public void academia(){
+            peso = peso - 1;
+            System.out.println("Novo peso de "+nome+" é "+peso);
+        }
+
     }
 }
